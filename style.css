@@ -44,7 +44,14 @@ body {
     height: 50px;
     margin: 5px;
     font-size: 18px;
+    transition: all 0.05s ease-in-out;
     text-shadow: 1px 1px darkgray;
+}
+
+.calculator button:active,
+.calculator button.active {
+    translate: 5px 5px;
+    box-shadow: 1px 1px darkgray, inset 3px 3px darkgray;
 }
 
 #key_0 {
