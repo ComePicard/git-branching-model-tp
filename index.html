@@ -1,49 +1,43 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Démo Git workflow</title>
-    </head>
-
-    <body>
-        <header>
-            <h1>TP: Git workflow</h1>
-            <nav class="navbar">
-                <a href="#">Accueil</a>
-                <a href="#">À propos</a>
-            </nav>
-        </header>
-
-        <main>
-
-            <section>
-
-                <header>
-                    <h2>Calculatrice en ligne</h2>
-                    <p>Une application en ligne développée par ...</p>
-                </header>
-
-                <input type="number" name="left-operand" id="left-operand" value="1"> <span id="operator">+</span>
-                <input type="number" name="right-operand" id="right-operand" value="1"> <span>=</span> <span
-                    id="result">?</span>
-
-            </section>
-
-        </main>
-
-        <aside>
-            Bare latérale
-        </aside>
-
-        <footer>
-            Le footer
-        </footer>
-
-    </body>
-
+<html lang="fr_fr">
+<head>
+    <title>Gitculator</title>
+</head>
+<body>
+<div class="calculator">
+    <div class="row">
+        <input type="text" id="result" disabled>
+    </div>
+    <div class="row">
+        <div>
+            <button id="key_clear">C</button>
+            <button id="key_clear_error">CE</button>
+        </div>
+        <button id="key_plus">+</button>
+    </div>
+    <div class="row">
+        <button id="key_7">7</button>
+        <button id="key_8">8</button>
+        <button id="key_9">9</button>
+        <button id="key_div">/</button>
+    </div>
+    <div class="row">
+        <button id="key_4">4</button>
+        <button id="key_5">5</button>
+        <button id="key_6">6</button>
+        <button id="key_time">*</button>
+    </div>
+    <div class="row">
+        <button id="key_1">1</button>
+        <button id="key_2">2</button>
+        <button id="key_3">3</button>
+        <button id="key_minus">-</button>
+    </div>
+    <div class="row">
+        <button id="key_0">0</button>
+        <button id="key_dot">.</button>
+        <button id="key_equal">=</button>
+    </div>
+</div>
+</body>
 </html>
