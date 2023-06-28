@@ -11,34 +11,35 @@
     </div>
     <div class="row">
         <div>
-            <button id="key_clear">C</button>
-            <button id="key_clear_error">CE</button>
+            <button onclick="clearResult()" id="key_clear">C</button>
+            <button onclick="clearError()" id="key_clear_error">CE</button>
         </div>
-        <button id="key_plus">+</button>
+        <button onclick="appendValue('+')" id="key_+">+</button>
     </div>
     <div class="row">
-        <button id="key_7">7</button>
-        <button id="key_8">8</button>
-        <button id="key_9">9</button>
-        <button id="key_div">/</button>
+        <button onclick="appendValue('7')" id="key_7">7</button>
+        <button onclick="appendValue('8')" id="key_8">8</button>
+        <button onclick="appendValue('9')" id="key_9">9</button>
+        <button onclick="appendValue('/')" id="key_/">/</button>
     </div>
     <div class="row">
-        <button id="key_4">4</button>
-        <button id="key_5">5</button>
-        <button id="key_6">6</button>
-        <button id="key_time">*</button>
+        <button onclick="appendValue('4')" id="key_4">4</button>
+        <button onclick="appendValue('5')" id="key_5">5</button>
+        <button onclick="appendValue('6')" id="key_6">6</button>
+        <button onclick="appendValue('*')" id="key_*">*</button>
     </div>
     <div class="row">
-        <button id="key_1">1</button>
-        <button id="key_2">2</button>
-        <button id="key_3">3</button>
-        <button id="key_minus">-</button>
+        <button onclick="appendValue('1')" id="key_1">1</button>
+        <button onclick="appendValue('2')" id="key_2">2</button>
+        <button onclick="appendValue('3')" id="key_3">3</button>
+        <button onclick="appendValue('-')" id="key_-">-</button>
     </div>
     <div class="row">
-        <button id="key_0">0</button>
-        <button id="key_dot">.</button>
-        <button id="key_equal">=</button>
+        <button onclick="appendValue('0')" id="key_0">0</button>
+        <button onclick="appendValue('.')" id="key_.">.</button>
+        <button onclick="calculate()" id="key_=">=</button>
     </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
