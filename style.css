@@ -10,7 +10,9 @@ body {
 }
 
 .calculator {
+    transform: rotateX(5deg);
     background-color: lightgray;
+    box-shadow: inset -15px -15px darkgray,inset 3px 3px #F0F0F0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -18,12 +20,14 @@ body {
     align-items: center;
     width: 250px;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 10px 25px 25px 10px;
+    border-radius: 5px 25px 5px 25px;
     margin: 0 auto;
 }
 
 .calculator input[type="text"] {
     width: 95%;
+    box-shadow: inset -5px -5px black, -2px -2px #F0F0F0;
     font-family: digital-7, sans-serif;
     color: limegreen;
     border-radius: 5px;
@@ -35,10 +39,12 @@ body {
 
 .calculator button {
     border-radius: 5px;
+    box-shadow: 5px 5px darkgray, inset -3px -3px darkgray, inset 3px 3px white;
     width: 50px;
     height: 50px;
     margin: 5px;
     font-size: 18px;
+    text-shadow: 1px 1px darkgray;
 }
 
 #key_0 {
