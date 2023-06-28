@@ -1,3 +1,8 @@
+@font-face {
+    font-family: digital-7;
+    src: url(./assets/Digital7Mono-Yz9J4.ttf)
+}
+
 body {
     font-family: Arial, sans-serif;
     margin-top: 20vh;
@@ -19,6 +24,7 @@ body {
 
 .calculator input[type="text"] {
     width: 95%;
+    font-family: digital-7, sans-serif;
     color: limegreen;
     border-radius: 5px;
     margin-bottom: 10px;
