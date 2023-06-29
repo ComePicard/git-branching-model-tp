@@ -3,11 +3,16 @@
 <head>
     <title>Gitculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
 <div class="history">
     <h1>History</h1>
     <div id="historyContainer">
+    </div>
+    <div class="historyFooter">
+        <button onclick="clearHistory()" class="history_button delete" title="Clear history"><i class="material-icons delete_icon">delete</i></button>
+        <button onclick="exportHistory()" class="history_button download" title="Download history"><i class="material-icons download_icon">download</i></button>
     </div>
 </div>
 <div class="calculator">
@@ -16,7 +21,7 @@
     </div>
     <div class="row">
         <div>
-            <button onclick="clearResult()" id="key_clear">C</button>
+            <button onclick="clearResult()" id="key_clear" title="Clear">C</button>
             <button onclick="clearError()" id="key_clear_error">CE</button>
         </div>
         <button onclick="appendValue('+')" id="key_+">+</button>
@@ -42,7 +47,7 @@
     <div class="row">
         <button onclick="appendValue('0')" id="key_0">0</button>
         <button onclick="appendValue('.')" id="key_.">.</button>
-        <button onclick="calculate()" id="key_=">=</button>
+        <button onclick="calculate()" id="key_=" title="Print result">=</button>
     </div>
 </div>
 <script src="script.js"></script>
