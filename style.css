@@ -9,6 +9,8 @@ body {
     background-color: #d2e9fc;
 }
 
+/*================== CALCULATOR ==================*/
+
 .calculator {
     transform: rotateX(5deg);
     background-color: lightgray;
@@ -64,4 +66,82 @@ body {
     flex-direction: row;
     align-items: end;
     justify-content: space-between;
+}
+
+/*=================== CALCULATOR ==================*/
+
+/*==================== HISTORY ====================*/
+
+.history{
+    position: absolute;
+    left: 15px;
+    top: 10%;
+    background: #050505;
+    color:limegreen;
+    width: 350px;
+    height: 80%;
+    border-radius: 5px;
+    font-family: digital-7, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history h1{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.history h1::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: limegreen;
+    position: absolute;
+    left: 10%;
+    top: 65px;
+}
+
+#historyContainer{
+    min-width: 90%;
+    max-height: 75%;
+    overflow-y: scroll;
+}
+
+#historyContainer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#historyContainer p {
+    margin: 10px 10px 0 0;
+    font-size: 20px;
+}
+
+.calcul_expression {
+    padding-top: 0;
+}
+
+.calcul_result {
+    padding-bottom: 30px;
+}
+
+#historyContainer::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Piste (background) */
+#historyContainer::-webkit-scrollbar-track {
+    background: #050505; /* Couleur de fond */
+}
+
+#historyContainer::-webkit-scrollbar-thumb {
+    background: limegreen;
+    border-radius: 2px;
+}
+
+#historyContainer::-webkit-scrollbar-thumb:hover {
+    background: green;
 }
