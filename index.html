@@ -1,49 +1,55 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Démo Git workflow</title>
-    </head>
-
-    <body>
-        <header>
-            <h1>TP: Git workflow</h1>
-            <nav class="navbar">
-                <a href="#">Accueil</a>
-                <a href="#">À propos</a>
-            </nav>
-        </header>
-
-        <main>
-
-            <section>
-
-                <header>
-                    <h2>Calculatrice en ligne</h2>
-                    <p>Une application en ligne développée par ...</p>
-                </header>
-
-                <input type="number" name="left-operand" id="left-operand" value="1"> <span id="operator">+</span>
-                <input type="number" name="right-operand" id="right-operand" value="1"> <span>=</span> <span
-                    id="result">?</span>
-
-            </section>
-
-        </main>
-
-        <aside>
-            Bare latérale
-        </aside>
-
-        <footer>
-            Le footer
-        </footer>
-
-    </body>
-
+<html lang="fr_fr">
+<head>
+    <title>Gitculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div class="history">
+    <h1>History</h1>
+    <div id="historyContainer">
+    </div>
+    <div class="historyFooter">
+        <button onclick="clearHistory()" class="history_button delete" title="Clear history"><i class="material-icons delete_icon">delete</i></button>
+        <button onclick="exportHistory()" class="history_button download" title="Download history"><i class="material-icons download_icon">download</i></button>
+    </div>
+</div>
+<div class="calculator">
+    <div class="row">
+        <input type="text" id="result" disabled>
+    </div>
+    <div class="row">
+        <div>
+            <button onclick="clearResult()" id="key_clear" title="Clear">C</button>
+            <button onclick="clearError()" id="key_clear_error">CE</button>
+        </div>
+        <button onclick="appendValue('+')" id="key_+">+</button>
+    </div>
+    <div class="row">
+        <button onclick="appendValue('7')" id="key_7">7</button>
+        <button onclick="appendValue('8')" id="key_8">8</button>
+        <button onclick="appendValue('9')" id="key_9">9</button>
+        <button onclick="appendValue('/')" id="key_/">/</button>
+    </div>
+    <div class="row">
+        <button onclick="appendValue('4')" id="key_4">4</button>
+        <button onclick="appendValue('5')" id="key_5">5</button>
+        <button onclick="appendValue('6')" id="key_6">6</button>
+        <button onclick="appendValue('*')" id="key_*">*</button>
+    </div>
+    <div class="row">
+        <button onclick="appendValue('1')" id="key_1">1</button>
+        <button onclick="appendValue('2')" id="key_2">2</button>
+        <button onclick="appendValue('3')" id="key_3">3</button>
+        <button onclick="appendValue('-')" id="key_-">-</button>
+    </div>
+    <div class="row">
+        <button onclick="appendValue('0')" id="key_0">0</button>
+        <button onclick="appendValue('.')" id="key_.">.</button>
+        <button onclick="calculate()" id="key_=" title="Print result">=</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
 </html>
