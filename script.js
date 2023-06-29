@@ -46,7 +46,11 @@ function clearResult() {
 }
 
 function clearError() {
-    document.getElementById("result").value = "";
+    let history_to_clear = document.getElementById("historyContainer");
+    history = [];
+    history_to_clear.removeChild(history_to_clear.lastChild);
+    history_to_clear.removeChild(history_to_clear.lastChild);
+
 }
 
 function clearHistory(){
